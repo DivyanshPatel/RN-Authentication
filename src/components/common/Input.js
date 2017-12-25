@@ -11,10 +11,12 @@ const Input = (props) => {
       <Text style={labelStyle}>{props.label}</Text>
 
       <TextInput
+        secureTextEntry={props.secureTextEntry}
+        placeholder={props.placeholder}
+        autoCorrect={false}
         style={textStyle}
         value={props.value}
         onChangeText={props.onChangeText}
-        style={{height: 20 , width: 100}}
       />
 
 
